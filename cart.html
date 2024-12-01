@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap');
+  </style>
+
+    <link rel="stylesheet" href="Home.css">
+    <link rel="icon" href="Logo Pics/Logo11.png" type="image/x-icon">
+    <title>SD FreshCart | Quality and Convenience, Just a Click Away</title>
+
+<style>  
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 10px;
+    color: black;
+}
+
+.cart-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    gap: 20px;
+    padding-top: 50px;
+}
+
+.product-container, .subtotal-container{
+    position: relative;
+    background-color: white;
+    border: 1px solid rgba(107, 106, 106, 0.732);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(107, 106, 106, 0.3);
+    width:60%;
+    top: -40px;
+}
+
+.subtotal-container {
+    width:30%;
+}
+
+.header1 {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.product-section, .subtotal-section {
+    padding: 20px;
+}
+
+.product-item1 {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.product-item1 img {
+    width: 200px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.product-details1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content:space-between ;
+}
+
+.product-details1 input[type="number"] {
+    width: 100%; 
+    max-width: 150px;
+    padding: 5px; 
+    font-size: 16px; 
+    box-sizing: border-box; 
+}
+
+.cartBtn{
+    background-color:orangered;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.cartBtn:hover {
+    background-color:#cc3300;
+}
+.cartBtn2{
+    background-color:gray;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.cartBtn2:hover {
+    background-color:#333333;
+}
+
+.subtotal-details {
+    padding-top: 25px;
+}
+
+.subtotal-details p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.subtotal-details p strong {
+    font-size: 18px;
+}
+
+/* For smaller screens, make containers stack */
+@media (max-width: 768px) {
+    .product-container, .subtotal-container {
+        width: 90%; 
+    }
+    .product-item1 img {
+    width: 100px;
+    height: 100px;
+    margin-right: 15px;
+}
+}
+
+</style>
+</head>
+
+<body bgcolor="#e0e0e0" onload="showSlides()">
+
+  <div class="banner">
+    <div class="navbar">
+      <a href="Home.html"><img src="Logo Pics/Logo10.png" alt="SD Freshcart" class="logo"></a>
+
+      <div class="hamburger" onclick="toggleMenu()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    
+      <ul class="nav-links">
+        <li> <a href="Home.html">Home</a> </li>
+
+        <li class="dropdown">
+          <a href="#">Categories ⮟</a>
+          <div class="dropdown-content">
+            <a href="Vegetables.html">Vegetables</a>
+            <a href="Fruits.html">Fruits</a>
+            <a href="Beverags.html">Beverages</a>
+            <a href="Snack.html">Snacks & Confectionery</a>
+            <a href="Dairy.html">Dairy Products</a>
+            <a href="Spices.html">Seeds & Spices</a>
+            <a href="#">Frozen Food</a>
+            <a href="#">Rice</a>
+            <a href="#">Household</a>
+            <a href="#">Baby Products</a>
+          </div>
+        </li>
+
+        <li> <a href="Deals.html">Special Deals</a> </li>
+        <li> <a href="AboutUs.html">About Us</a> </li>
+        <li> <a href="ContactUs.html">Contact US</a> </li>
+     </ul>
+
+     <div class="search">
+      <input class="srch" type="search" id="searchBox" placeholder="Search For Products...">
+      <button onclick="performSearch()"><b>Search</b></button>
+  </div>
+
+  <script src="main.js"></script>
+
+  <div class="login">
+    <a href="login.html"><img src="Icons/login New.png" width="30px" class="logo3"></a>
+  </div>
+
+  <div class="cart">
+    <a href="cart.html"><img src="Icons/cart2.png" width="30px" class="logo2"></a>
+  </div>
+
+    </div>
+  </div>
+    <h1>My Cart</h1>
+    <div class="cart-container">
+        <div class="product-container">
+            <div class="header1">Product</div><br>
+            <div class="product-section"><hr>
+                <div class="product-item1">
+                    <img src="Beverages Pics/cocacola.jpg" alt="Coca Cola">
+                    <div class="product-details1">
+                        <p><strong>Coca Cola-PET</strong></p>
+                        <p>Price: Rs 380.00 LKR</p>
+                        <label for="quantity1">Qty:</label>
+                        <input type="number" id="quantity1" value="2" min="2"><br>
+                        <a href="#"><button class="cartBtn">Remove</button></a>
+                    </div>
+                </div><br><hr>
+                <div class="product-item1">
+                    <img src="Diary Pics/nestomalt.jpg" alt="Nestomalt">
+                    <div class="product-details1">
+                        <p><strong>Nestomalt Maltes Beverage Pouch</strong></p>
+                        <p>Price: Rs 1050.00 LKR</p>
+                        <label for="quantity2">Qty:</label>
+                        <input type="number" id="quantity2" value="1" min="1"><br>
+                        <a href="#"><button class="cartBtn">Remove</button></a>
+                    </div>
+                </div><br><hr>
+                <div class="product-item1">
+                    <img src="Snacks Pics/cream.jpg" alt="Maliban Smart Cream Cracker">
+                    <div class="product-details1">
+                        <p><strong>Maliban Smart Cream Cracker</strong></p>
+                        <p>Price: Rs 480.00 LKR</p>
+                        <label for="quantity3">Qty:</label>
+                        <input type="number" id="quantity3" value="2" min="2"><br>
+                        <a href="#"><button class="cartBtn">Remove</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Subtotal Container -->
+        <div class="subtotal-container">
+            <div class="header1">Subtotal</div>
+            <div class="subtotal-section">
+                <div class="subtotal-details">
+                    <hr>
+                    <p><b>Coca Cola-PET * 2 = </b> Rs 760.00 LKR</p><hr>
+                    <p><b>Nestomalt Maltes Pouch * 1 =</b> Rs 1050.00 LKR</p><hr>
+                    <p><b>Maliban Smart Cream Cracker * 2 =</b> Rs 960.00 LKR</p>
+                    <hr><br><br><hr>
+                    <p><b>Subtotal =</b> Rs 2770.00 LKR</p><hr>
+                    <p><b>Delivery =</b> Rs 500.00 LKR</p><hr>
+                    <p><strong>Total: Rs 3270.00</strong></p><hr>
+                    <br>
+                    <a href="#"><button class="cartBtn2">Checkout</button></a>
+                    <a href="Home.html"><button class="cartBtn2">Continue Shopping</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="endbar">
+        <ul>
+            <li><a href="PrivacyPolicy.html">Privacy Policy</a></li>
+            <li><a href="Term&Conditions.html">Terms and Conditions</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="ContactUs.html">Contact Us</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        <p>Copyright &#169; 2024 SD FreshCart. All rights reserved.</p>
+    </div>
+</body>
+</html>

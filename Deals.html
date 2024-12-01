@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap');
+  </style>
+
+    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="Categories.css">
+    <link rel="icon" href="Logo Pics/Logo11.png" type="image/x-icon">
+    <title>SD FreshCart | Quality and Convenience, Just a Click Away</title>
+
+</head>
+
+<body bgcolor="#e0e0e0" onload="showSlides()">
+
+  <div class="banner">
+  <div class="navbar">
+    <a href="Home.html"><img src="Logo Pics/Logo10.png" alt="SD Freshcart" class="logo"></a>
+
+    <div class="hamburger" onclick="toggleMenu()">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+  </div>
+  
+    <ul class="nav-links">
+      <li> <a href="Home.html">Home</a> </li>
+
+      <li class="dropdown">
+        <a href="#">Categories ⮟</a>
+        <div class="dropdown-content">
+          <a href="Vegetables.html">Vegetables</a>
+          <a href="Fruits.html">Fruits</a>
+          <a href="Beverags.html">Beverages</a>
+          <a href="Snack.html">Snacks & Confectionery</a>
+          <a href="Dairy.html">Dairy Products</a>
+          <a href="Spices.html">Seeds & Spices</a>
+          <a href="#">Frozen Food</a>
+          <a href="#">Rice</a>
+          <a href="#">Household</a>
+          <a href="#">Baby Products</a>
+        </div>
+      </li>
+
+      <li> <a href="Deals.html">Special Deals</a> </li>
+      <li> <a href="AboutUs.html">About Us</a> </li>
+      <li> <a href="ContactUs.html">Contact US</a> </li>
+   </ul>
+
+   <div class="search">
+    <input class="srch" type="search" id="searchBox" placeholder="Search For Products...">
+    <button onclick="performSearch()"><b>Search</b></button>
+</div>
+
+<script src="main.js"></script>
+
+<div class="login">
+  <a href="login.html"><img src="Icons/login New.png" width="30px" class="logo3"></a></div>
+
+<div class="cart">
+  <a href="cart.html"><img src="Icons/cart2.png" width="30px" class="logo2"></a>
+</div>
+  </div>
+</div>
+
+  <div class="Deals-container">
+    <h1>Special Deals</h1>
+  <div class="Deals-grid">
+    <div class="Deals-item">
+      <a href="SnacksDes.html"><img src="Offers Pics/maliban.jpg" alt="Maliban Gold Marie"></a>
+      <h4>Maliban Gold Marie</h4>
+      <p>350.00 g</p>
+      <p><b>Rs. 315.00</b><br><s>Rs. 330.00</s></p>
+      <p>(inclusive of all taxes)</p>
+      <a href="cart.html"><button>Add To Cart</button></a>
+    </div>
+    
+    <div class="Deals-item">
+      <a href="DairyDes.html"><img src="Offers Pics/ambewela.jpg" alt="Ambewela Fresh Milk"></a>
+      <h4>Ambewela Fresh Milk</h4>
+      <p>1.00 l</p>
+      <p><b>Rs. 510.00</b><br><s>Rs. 550.00</s></p>
+      <p>(inclusive of all taxes)</p>
+      <a href="cart.html"><button>Add To Cart</button></a>
+    </div>
+    
+    <div class="Deals-item">
+      <a href="BeveragesDes.html"><img src="Offers Pics/cocacola.jpg" alt="Coca Cola-PET"></a>
+      <h4>Coca Cola-PET</h4>
+      <p>1.50 l</p>
+      <p><b>Rs. 380.00</b><br><s>Rs. 400.00</s></p>
+      <p>(inclusive of all taxes)</p>
+      <a href="cart.html"><button>Add To Cart</button></a>
+    </div>
+    <div class="Deals-item">
+        <a href="SpicesDes.html"><img src="Spices Pics/chilie.jpg"" alt="Freelan Chilli Pieces"></a>
+        <h4>Freelan Chilli Pieces</h4>
+        <p>250.00 g</p>
+        <p><b>Rs. 420.00</b><br><s>Rs. 450.00</s></p>
+        <p>(inclusive of all taxes)</p>
+        <a href="cart.html"><button>Add To Cart</button></a>
+      </div>
+      <div class="Deals-item">
+        <a href="FruitsDes.html"><img src="Offers Pics/apple.jpg" alt="Red Apple"></a>
+        <h4>Red Apple</h4>
+        <p>700.00 g</p>
+        <p><b>Rs. 1250.00</b><br><s>Rs. 1330.00</s></p>
+        <p>(inclusive of all taxes)</p>
+        <a href="cart.html"><button>Add To Cart</button></a>
+      </div>
+      
+      <div class="Deals-item">
+        <img src="Offers Pics/nestomalt.jpg" alt="Nestomalt Maltes Beverage Pouch">
+        <h4>Nestomalt Maltes Beverage Pouch</h4>
+        <p>600.00 g</p>
+        <p><b>Rs. 1050.00</b><br><s>Rs. 1120.00</s></p>
+        <p>(inclusive of all taxes)</p>
+        <a href="cart.html"><button>Add To Cart</button></a>
+      </div>
+      
+      
+      <div class="Deals-item">
+        <a href="vegetablesDes.html"><img src="Offers Pics/carrot.jpg" alt="Carrot"></a>
+        <h4>Carrot</h4>
+        <p>500.00 g</p>
+        <p><b>Rs. 90.00</b><br><s>Rs. 100.00</s></p>
+        <p>(inclusive of all taxes)</p>
+        <a href="cart.html"><button>Add To Cart</button></a>
+      </div>
+      <div class="Deals-item">
+          <img src="Offers Pics/tomato.jpg" alt="Tomato">
+          <h4>Tomato</h4>
+          <p>500.00 g</p>
+          <p><b>Rs. 145.00</b><br><s>Rs. 160.00</s></p>
+          <p>(inclusive of all taxes)</p>
+          <a href="cart.html"><button>Add To Cart</button></a>
+        </div>
+      </div> 
+     </div>    
+
+     <div class="endbar">
+
+        <ul>
+          <li> <a href="PrivacyPolicy.html">Privacy Policy</a> </li>
+          <li> <a href="Term&Condiions.html">Terms and Conditions</a> </li>
+          <li> <a href="AboutUs.html">About Us</a> </li>
+          <li> <a href="ContactUs.html">Contact US</a> </li>
+          <li> <a href="FAQ.html">FAQ</a> </li>
+       </ul>
+    
+    </div>
+    
+      <div class="footer">
+        <p>Copyright &#169; 2024 SD FreshCart. All rights reserved.</p>
+      </div>
+
+</body>
+</html>

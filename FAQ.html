@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap');
+  </style>
+
+    <link rel="stylesheet" href="Home.css">
+    <link rel="icon" href="Logo Pics/Logo11.png" type="image/x-icon">
+    <title>SD FreshCart | Quality and Convenience, Just a Click Away</title>
+
+    <style>
+
+       
+.faq-section {
+    position: relative;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    top: 30px;
+    border: 1px solid rgba(107, 106, 106, 0.732);
+    box-shadow:0 0 15px rgba(107, 106, 106, 0.732);
+    border-radius: 10px;
+}
+
+.faq-section h2 {
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+    color: black;
+}
+
+.faq-item {
+    margin: 20px 0;
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.question h3 {
+    font-size: 18px;
+    color: black;
+}
+
+.toggle {
+    font-size: 20px;
+    color: #00a000;
+}
+
+.answer {
+    display: none;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+    </style>
+
+</head>
+
+<body bgcolor="#e0e0e0">
+    <div class="banner">
+    <div class="navbar">
+      <a href="Home.html"><img src="Logo Pics/Logo10.png" alt="SD Freshcart" class="logo"></a>
+
+      <div class="hamburger" onclick="toggleMenu()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    
+      <ul class="nav-links">
+        <li> <a href="Home.html">Home</a> </li>
+
+        <li class="dropdown">
+          <a href="#">Categories ⮟</a>
+          <div class="dropdown-content">
+            <a href="Vegetables.html">Vegetables</a>
+            <a href="Fruits.html">Fruits</a>
+            <a href="Beverags.html">Beverages</a>
+            <a href="Snack.html">Snacks & Confectionery</a>
+            <a href="Dairy.html">Dairy Products</a>
+            <a href="Spices.html">Seeds & Spices</a>
+            <a href="#">Frozen Food</a>
+            <a href="#">Rice</a>
+            <a href="#">Household</a>
+            <a href="#">Baby Products</a>
+          </div>
+        </li>
+
+        <li> <a href="Deals.html">Special Deals</a> </li>
+        <li> <a href="AboutUs.html">About Us</a> </li>
+        <li> <a href="ContactUs.html">Contact US</a> </li>
+     </ul>
+
+     <div class="search">
+        <input class="srch" type="search" id="searchBox" placeholder="Search For Products...">
+        <button onclick="performSearch()"><b>Search</b></button>
+    </div>
+
+  <div class="login">
+    <a href="login.html"><img src="Icons/login New.png" width="30px" class="logo3"></a> 
+ </div>
+
+  <div class="cart">
+    <a href="cart.html"><img src="Icons/cart2.png" width="30px" class="logo2"></a>
+  </div>
+    </div>
+  </div>
+
+  <div class="faq-section">
+    <h2>Online order & delivery related</h2>
+
+    <div class="faq-item">
+        <div class="question">
+            <h3>Can I place an order for a person residing elsewhere within the delivery grid?</h3>
+            <span class="toggle">+</span>
+        </div>
+        <div class="answer">
+            <p>Yes, you can place an order for a recipient other than yourself by stating the delivery address and details accurately prior to checkout.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="question">
+            <h3>How do I know my order is confirmed?</h3>
+            <span class="toggle">+</span>
+        </div>
+        <div class="answer">
+            <p>Your order will be confirmed via email or SMS with the details provided.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="question">
+            <h3>Is there a delivery charge for online orders?</h3>
+            <span class="toggle">+</span>
+        </div>
+        <div class="answer">
+            <p>Delivery charges may apply based on the order amount and location. Details will be provided during checkout.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="question">
+            <h3>Is there a restriction on how many orders I can place per day?</h3>
+            <span class="toggle">+</span>
+        </div>
+        <div class="answer">
+            <p>No, there is no restriction on the number of orders you can place per day.</p>
+        </div>
+    </div>
+    <div class="faq-item">
+        <div class="question">
+            <h3>What happens if you make the delivery to the incorrect address?</h3>
+            <span class="toggle">+</span>
+        </div>
+        <div class="answer">
+            <p>The telephone number of the receiving party is a compulsory field in the order form. We will call and confirm the address and the route before delivering the order and any inaccuracies in the address can be mentioned assuming the address is within the delivery grid of the store the order was placed to.</p>
+        </div>
+    </div>
+    <div class="faq-item">
+        <div class="question">
+            <h3>How long does it take for the delivery once I place the order?</h3>
+            <span class="toggle">+</span>
+        </div>
+        <div class="answer">
+            <p>If you place the order before 11a.m (Sri Lankan time) we will deliver the order to you within the same day and orders placed after 11a.m (Sri Lankan time) will be delivered before 8p.m(Sri Lankan time) the next day. Our team will contact the receiver of the order prior to delivery to ensure the time is convenient for him/her. You will receive an email and/or SMS when the order is ready to be delivered. The above is applicable only when there is no disruption to standard operating hours due to any external environmental changes. This can change without prior notice if curfew is imposed.</p>
+        </div>
+    </div>
+    <div class="faq-item">
+        <div class="question">
+            <h3>Can I add additional products or change my order once placed?</h3>
+            <span class="toggle">+</span>
+        </div>
+        <div class="answer">
+            <p>This facility is not available at the moment.</p>
+        </div>
+    </div>
+</div>
+
+<script src="main.js"></script>
+
+<div class="endbar">
+
+    <ul>
+      <li> <a href="PrivacyPolicy.html">Privacy Policy</a> </li>
+      <li> <a href="Term&Condiions.html">Terms and Conditions</a> </li>
+      <li> <a href="AboutUs.html">About Us</a> </li>
+      <li> <a href="ContactUs.html">Contact US</a> </li>
+      <li> <a href="FAQ.html">FAQ</a> </li>
+   </ul>
+
+</div>
+
+  <div class="footer">
+    <p>Copyright &#169; 2024 SD FreshCart. All rights reserved.</p>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap');
+  </style>
+
+    <link rel="stylesheet" href="Home.css">
+    <link rel="icon" href="Logo Pics/Logo11.png" type="image/x-icon">
+    <title>SD FreshCart | Quality and Convenience, Just a Click Away</title>
+
+<style>
+
+.login-container {
+  position: relative;
+  text-align: center;
+  width: 50%;
+  height: auto;
+  background-color: white;
+  border: 1px solid rgba(107, 106, 106, 0.732);
+  box-shadow:0 0 15px rgba(107, 106, 106, 0.732);
+  border-radius: 10px;
+  padding: 38px 40px;
+  margin: 0 auto;
+  margin-top: 76px;
+}
+
+.login-container h1{
+  font-size: 30px;
+  text-align: center;
+}
+
+.input-box{
+  width: 100%;
+  height: 50px;
+  position:relative ;
+  margin: 30px 0;
+}
+
+.input-box input{
+  width: 100%;
+  height: 100%;
+  background:transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(16, 15, 15, 0.2);
+  border-radius: 40px;
+  font-size: 16px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.input-box input::placeholder{
+  color: rgb(189, 183, 183);
+}
+
+.remember-forgot{
+  display: flex;
+  justify-content: space-between;
+  font-size:14.5px ;
+  margin: -15px 0 15px;
+}
+
+.remember-forgot input{
+  accent-color: blue;
+  margin-right: 3px;
+}
+
+
+.remember-forgot a{
+  color: black;
+  text-decoration: none;
+}
+
+.remember-forgot a:hover{
+  text-decoration: underline;
+}
+
+.logBtn{
+  width: 100%;
+  height: 45px;
+  background: limegreen;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgb(0,0,0, .1);
+  cursor:pointer ;
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+}
+
+.logBtn:hover{
+    background-color: #A3E77D;
+}
+
+.signup-link{
+  margin-top: 10px;
+}
+
+.signup-link p a{
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signup-link a:hover{
+  text-decoration: underline;
+}
+
+/* .adminlogin a{
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+}
+
+.adminlogin a:hover{
+  text-decoration: underline;
+} */
+
+@media (max-width: 1024px) {
+    .login-container {
+        width: 80%;
+   }
+}
+@media (max-width: 768px) {
+    .login-container {
+        width: 75%;
+    }
+}
+</style>
+
+</head>
+
+<body bgcolor="#e0e0e0">
+    <div class="banner">
+    <div class="navbar">
+      <a href="Home.html"><img src="Logo Pics/Logo10.png" alt="SD Freshcart" class="logo"></a>
+
+      <div class="hamburger" onclick="toggleMenu()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    
+      <ul class="nav-links">
+        <li> <a href="Home.html">Home</a> </li>
+
+        <li class="dropdown">
+          <a href="#">Categories ⮟</a>
+          <div class="dropdown-content">
+            <a href="Vegetables.html">Vegetables</a>
+            <a href="Fruits.html">Fruits</a>
+            <a href="Beverags.html">Beverages</a>
+            <a href="Snack.html">Snacks & Confectionery</a>
+            <a href="Dairy.html">Dairy Products</a>
+            <a href="Spices.html">Seeds & Spices</a>
+            <a href="#">Frozen Food</a>
+            <a href="#">Rice</a>
+            <a href="#">Household</a>
+            <a href="#">Baby Products</a>
+          </div>
+        </li>
+
+        <li> <a href="Deals.html">Special Deals</a> </li>
+        <li> <a href="AboutUs.html">About Us</a> </li>
+        <li> <a href="ContactUs.html">Contact US</a> </li>
+     </ul>
+
+     <div class="search">
+      <input class="srch" type="search" id="searchBox" placeholder="Search For Products...">
+      <button onclick="performSearch()"><b>Search</b></button>
+  </div>
+  <script src="main.js"></script>
+
+  <div class="login">
+    <a href="login.html"><img src="Icons/login New.png" width="30px" class="logo3"></a>  
+  </div>
+
+  <div class="cart">
+    <a href="cart.html"><img src="Icons/cart2.png" width="30px" class="logo2"></a>
+  </div>
+    </div>
+  </div>
+
+    <div class="login-container">
+            <form action="">
+                <h1>Customer Login</h1>
+                <div class="input-box">
+                    <input type="text" placeholder="Username" required>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="password" required>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Remember me</label>
+                    <a href="signup.html">Forgot password?</a>
+                </div>
+    
+                <button type="submit" class="logBtn">Login</button>
+                
+                <div class="signup-link">
+                    <p>Don't have an account? <a href="signup.html">Sign up</a> </p>
+                </div>
+                <!-- <div class="adminlogin">
+                  <a href="admin.html">Admin Login</a>
+                </div> -->
+            </form>
+    </div>
+
+        <div class="endbar">
+
+            <ul>
+              <li> <a href="PrivacyPolicy.html">Privacy Policy</a> </li>
+              <li> <a href="Term&Condiions.html">Terms and Conditions</a> </li>
+              <li> <a href="AboutUs.html">About Us</a> </li>
+             <li> <a href="ContactUs.html">Contact US</a> </li>
+              <li> <a href="FAQ.html">FAQ</a> </li>
+           </ul>
+        
+        </div>
+        
+          <div class="footer">
+            <p>Copyright &#169; 2024 SD FreshCart. All rights reserved.</p>
+          </div>
+
+
+
+</body>
+</html>

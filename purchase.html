@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap');
+  </style>
+
+    <link rel="stylesheet" href="Home.css">
+    <link rel="icon" href="Logo Pics/Logo11.png" type="image/x-icon">
+    <title>SD FreshCart | Quality and Convenience, Just a Click Away</title>
+
+    <style>
+          .profile-dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .profile-icon {
+    position: relative;
+    width: 30px;
+    top: 5px;
+    right: 20px;
+    cursor: pointer;
+  }
+  .dropdown-menu {
+    display:none;
+    position: absolute;
+    top: 37px;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 9px;
+    margin: 0;
+    width: 200px;
+    z-index: 10;
+  }
+  .prof-links {
+    text-align: left;
+  }
+  .prof-links a {
+    display: block;
+    padding: 10px 20px;
+    border-radius: 9px;
+    white-space: nowrap;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+  .prof-links a:hover {
+    background-color: lightblue;
+  }
+  
+  .profile-dropdown:hover .dropdown-menu {
+    display: block;
+  }
+        .purchase-history-container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .purchase-history-container h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table th, table td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        table th {
+            background-color: gray;
+            color: white;
+        }
+
+        table tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        .details-btn {
+            padding: 5px 10px;
+            background-color: limegreen;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .details-btn:hover {
+            background-color: gray;
+        }
+
+        @media (max-width: 768px) {
+            .purchase-history-container {
+                padding: 10px;
+            }
+
+            table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+
+            table th, table td {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body bgcolor="#e0e0e0">
+    <div class="banner">
+    <div class="navbar">
+      <a href="Home.html"><img src="Logo Pics/Logo10.png" alt="SD Freshcart" class="logo"></a>
+
+      <div class="hamburger" onclick="toggleMenu()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    
+      <ul class="nav-links">
+        <li> <a href="Home.html">Home</a> </li>
+
+        <li class="dropdown">
+          <a href="#">Categories ⮟</a>
+          <div class="dropdown-content">
+            <a href="Vegetables.html">Vegetables</a>
+            <a href="Fruits.html">Fruits</a>
+            <a href="Beverags.html">Beverages</a>
+            <a href="Snack.html">Snacks & Confectionery</a>
+            <a href="Dairy.html">Dairy Products</a>
+            <a href="Spices.html">Seeds & Spices</a>
+            <a href="#">Frozen Food</a>
+            <a href="#">Rice</a>
+            <a href="#">Household</a>
+            <a href="#">Baby Products</a>
+          </div>
+        </li>
+
+        <li> <a href="Deals.html">Special Deals</a> </li>
+        <li> <a href="AboutUs.html">About Us</a> </li>
+        <li> <a href="ContactUs.html">Contact US</a> </li>
+     </ul>
+
+     <div class="search">
+      <input class="srch" type="search" id="searchBox" placeholder="Search For Products...">
+      <button onclick="performSearch()"><b>Search</b></button>
+  </div>
+  <script src="main.js"></script>
+
+  <div class="profile-dropdown">
+    <img src="Icons/login New.png" width="30px" class="profile-icon">
+    <div class="dropdown-menu">
+      <div class ="prof-links"><a href="profile.html">My Profile</a></div>
+      <div class ="prof-links"><a href="purchase.html">View Purchase History </a></div>
+      <div class ="prof-links"><a href="OrderTracking.html">View Orders </a></div>
+      <div class ="prof-links"><a href="Home.html">Logout</a></div>
+    </div>
+  </div>
+
+  <div class="cart">
+    <a href="cart.html"><img src="Icons/cart2.png" width="30px" class="logo2"></a>
+  </div>
+    </div>
+  </div>
+
+    <!-- Main Content -->
+    <div class="purchase-history-container">
+        <h2>Purchase History</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Bill No</th>
+                    <th>Products</th>
+                    <th>Date</th>
+                    <th>Total Cost</th>
+                    <th>Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>121</td>
+                    <td>Milk, Bread, Eggs</td>
+                    <td>2024-11-15</td>
+                    <td>Rs. 2,500.00</td>
+                    <td><button class="details-btn">View</button></td>
+                </tr>
+                <tr>
+                    <td>122</td>
+                    <td>Rice, Vegetables</td>
+                    <td>2024-11-10</td>
+                    <td>Rs. 1,800.00</td>
+                    <td><button class="details-btn">View</button></td>
+                </tr>
+                <tr>
+                    <td>123</td>
+                    <td>Fruits, Juice</td>
+                    <td>2024-11-05</td>
+                    <td>Rs. 950.00</td>
+                    <td><button class="details-btn">View</button></td>
+                </tr>
+                <tr>
+                    <td>124</td>
+                    <td>Bread, Eggs</td>
+                    <td>2024-11-15</td>
+                    <td>Rs. 500.00</td>
+                    <td><button class="details-btn">View</button></td>
+                </tr>
+                <tr>
+                    <td>125</td>
+                    <td>Milk Powder</td>
+                    <td>2024-11-10</td>
+                    <td>Rs. 1,025.00</td>
+                    <td><button class="details-btn">View</button></td>
+                </tr>
+                <tr>
+                    <td>126</td>
+                    <td>Fruit Juice</td>
+                    <td>2024-11-05</td>
+                    <td>Rs. 350.00</td>
+                    <td><button class="details-btn">View</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    
+  <div class="endbar">
+
+    <ul>
+      <li> <a href="PrivacyPolicy.html">Privacy Policy</a> </li>
+      <li> <a href="Term&Condiions.html">Terms and Conditions</a> </li>
+      <li> <a href="AboutUs.html">About Us</a> </li>
+      <li> <a href="ContactUs.html">Contact US</a> </li>
+      <li> <a href="FAQ.html">FAQ</a> </li>
+   </ul>
+
+</div>
+
+  <div class="footer">
+    <p>Copyright &#169; 2024 SD FreshCart. All rights reserved.</p>
+  </div>
+
+  </body>
+  </html>
+</body>
+</html>
